@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\InputGrabbing">
+      <UniqueIdentifier>{f0ea2cbc-4857-442e-9c0d-23ea424b9a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\InputGrabbing">
+      <UniqueIdentifier>{24939141-7ce5-487b-b71e-8a850822fa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days">
+      <UniqueIdentifier>{797f7376-f5c0-47d7-b252-114c94f9e663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayOne">
+      <UniqueIdentifier>{25f27bb9-9bf2-4ced-9c98-b0c47d0c378a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days">
+      <UniqueIdentifier>{823bfb06-d2e2-4f45-bc69-87c1c6043706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayOne">
+      <UniqueIdentifier>{e75d3419-85da-4841-9cd9-f7071feea19a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayTwo">
+      <UniqueIdentifier>{674bdc01-6040-4884-b23b-2697e3931de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayTwo">
+      <UniqueIdentifier>{da18d40e-e47f-4fcc-990e-417bcce06397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayThree">
+      <UniqueIdentifier>{5150a997-f12c-4e3b-a66a-77ec4629d4fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayFour">
+      <UniqueIdentifier>{da05604e-d6d3-4b2a-a833-a89a53109bce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayThree">
+      <UniqueIdentifier>{53ab8f18-0753-4d56-aa41-bef6ebceab35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayFour">
+      <UniqueIdentifier>{292c4e45-af87-4118-b721-9f632b1fc341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayFive">
+      <UniqueIdentifier>{7ef1ccd8-e7f4-4426-af31-7b208e256f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayFive">
+      <UniqueIdentifier>{d73dd7b3-9df9-4c65-bf72-e6c9b8bbe5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DaySix">
+      <UniqueIdentifier>{d6460679-63a2-42d0-8819-39bef40429f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DaySix">
+      <UniqueIdentifier>{4a75ee5c-2d99-4003-bee2-46ed904be8bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DaySeven">
+      <UniqueIdentifier>{562d2912-ba1a-4202-b8a9-85218d2d222d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DaySeven">
+      <UniqueIdentifier>{5ff2d7ab-7496-4632-8a3e-bfb6fac828f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayEight">
+      <UniqueIdentifier>{d7aaaa89-33a9-48ab-b5a2-3170e45c8897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayEight">
+      <UniqueIdentifier>{4c6ff6e4-5911-4902-85fd-f2c86088dadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayNine">
+      <UniqueIdentifier>{a69b52c9-41c3-4dfc-aa2a-412435906400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayNine">
+      <UniqueIdentifier>{663a4c3b-4ea9-452d-a944-58d278b1fa85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\DayTen">
+      <UniqueIdentifier>{18579512-b7f0-4897-a89f-2a50abf29d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayTen">
+      <UniqueIdentifier>{f8cfaa38-b158-4c41-9b7c-5bcecadb5f5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceCode\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayOne\DayOne.cpp">
+      <Filter>Source Files\Days\DayOne</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\InputGrabber\InputGrabber.cpp">
+      <Filter>Source Files\InputGrabbing</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayTwo\DayTwo.cpp">
+      <Filter>Source Files\Days\DayTwo</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayThree\DayThree.cpp">
+      <Filter>Source Files\Days\DayThree</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayFour\DayFour.cpp">
+      <Filter>Source Files\Days\DayFour</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayFive\DayFive.cpp">
+      <Filter>Source Files\Days\DayFive</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DaySix\DaySix.cpp">
+      <Filter>Source Files\Days\DaySix</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DaySeven\DaySeven.cpp">
+      <Filter>Source Files\Days\DaySeven</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayEight\DayEight.cpp">
+      <Filter>Source Files\Days\DayEight</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayNine\DayNine.cpp">
+      <Filter>Source Files\Days\DayNine</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayTen\DayTen.cpp">
+      <Filter>Source Files\Days\DayTen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SourceCode\DayOne\DayOneInput.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SourceCode\DayOne\DayOne.h">
+      <Filter>Header Files\Days\DayOne</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\InputGrabber\InputGrabber.h">
+      <Filter>Header Files\InputGrabbing</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayTwo\DayTwo.h">
+      <Filter>Header Files\Days\DayTwo</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayThree\DayThree.h">
+      <Filter>Header Files\Days\DayThree</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayFour\DayFour.h">
+      <Filter>Header Files\Days\DayFour</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayFive\DayFive.h">
+      <Filter>Header Files\Days\DayFive</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DaySix\DaySix.h">
+      <Filter>Header Files\Days\DaySix</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DaySeven\DaySeven.h">
+      <Filter>Header Files\Days\DaySeven</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayEight\DayEight.h">
+      <Filter>Header Files\Days\DayEight</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayNine\DayNine.h">
+      <Filter>Header Files\Days\DayNine</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayTen\DayTen.h">
+      <Filter>Header Files\Days\DayTen</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
