@@ -6,6 +6,10 @@ const int DaySevenTask::GetPartOneCode(const string inputToBreak)
 	vector<string> lines = GetPerLineArray(inputToBreak);
 	unordered_map<string, BagContents> map = GetMapOfBagContent(lines);
 
+	// REALLY should have stashed the bags results or came up with a non brute force method to make this a lot more quicker.
+	// But I got distracted on the day, made dinner and came back to the right answer.
+	// So I guess here we are. 
+	// I have a couple too many projects, lessons, and teaching stuff right now so I don't feel like going back to this.
 	const string bagKeyToFind = "shiny gold bags";
 	int countOfBags = 0;
 	for (const auto& keyValPair : map)
