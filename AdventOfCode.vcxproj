@@ -28,6 +28,7 @@
     <ClCompile Include="SourceCode\DaySeven\DaySeven.cpp" />
     <ClCompile Include="SourceCode\DaySix\DaySix.cpp" />
     <ClCompile Include="SourceCode\DayTen\DayTen.cpp" />
+    <ClCompile Include="SourceCode\DayThirteen\DayThirteen.cpp" />
     <ClCompile Include="SourceCode\DayThree\DayThree.cpp" />
     <ClCompile Include="SourceCode\DayTwelve\DayTwelve.cpp" />
     <ClCompile Include="SourceCode\DayTwo\DayTwo.cpp" />
@@ -44,6 +45,7 @@
     <ClInclude Include="SourceCode\DaySeven\DaySeven.h" />
     <ClInclude Include="SourceCode\DaySix\DaySix.h" />
     <ClInclude Include="SourceCode\DayTen\DayTen.h" />
+    <ClInclude Include="SourceCode\DayThirteen\DayThirteen.h" />
     <ClInclude Include="SourceCode\DayThree\DayThree.h" />
     <ClInclude Include="SourceCode\DayTwelve\DayTwelve.h" />
     <ClInclude Include="SourceCode\DayTwo\DayTwo.h" />

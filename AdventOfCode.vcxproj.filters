@@ -97,6 +97,12 @@
     <Filter Include="Source Files\Days\DayTwelve">
       <UniqueIdentifier>{edfa468e-c247-40f5-8d20-550122b5ca94}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Days\DayThirteen">
+      <UniqueIdentifier>{508fdac0-4862-4e12-8560-54e2bde0a02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\DayThirteen">
+      <UniqueIdentifier>{3491ddcb-c999-4b74-b3fc-88200858074c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceCode\Source.cpp">
@@ -140,6 +146,9 @@
     </ClCompile>
     <ClCompile Include="SourceCode\DayTwelve\DayTwelve.cpp">
       <Filter>Source Files\Days\DayTwelve</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\DayThirteen\DayThirteen.cpp">
+      <Filter>Source Files\Days\DayThirteen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +195,9 @@
     </ClInclude>
     <ClInclude Include="SourceCode\DayTwelve\DayTwelve.h">
       <Filter>Header Files\Days\DayTwelve</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\DayThirteen\DayThirteen.h">
+      <Filter>Header Files\Days\DayThirteen</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
