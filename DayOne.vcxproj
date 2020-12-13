@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceCode\DayEight\DayEight.cpp" />
+    <ClCompile Include="SourceCode\DayEleven\DayEleven.cpp" />
     <ClCompile Include="SourceCode\DayFive\DayFive.cpp" />
     <ClCompile Include="SourceCode\DayFour\DayFour.cpp" />
     <ClCompile Include="SourceCode\DayNine\DayNine.cpp" />
@@ -34,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SourceCode\DayEight\DayEight.h" />
+    <ClInclude Include="SourceCode\DayEleven\DayEleven.h" />
     <ClInclude Include="SourceCode\DayFive\DayFive.h" />
     <ClInclude Include="SourceCode\DayFour\DayFour.h" />
     <ClInclude Include="SourceCode\DayNine\DayNine.h" />
