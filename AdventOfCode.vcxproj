@@ -55,7 +55,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a99f6d4b-d466-41a7-9e38-0e8092c83e36}</ProjectGuid>
+    <ProjectGuid>{74EB8778-1512-4EFD-B577-F68BFAF72879}</ProjectGuid>
     <RootNamespace>DayOne</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>AdventOfCode</ProjectName>
