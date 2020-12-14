@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="SourceCode\Day14\DayFourteen.cpp" />
     <ClCompile Include="SourceCode\DayEight\DayEight.cpp" />
     <ClCompile Include="SourceCode\DayEleven\DayEleven.cpp" />
     <ClCompile Include="SourceCode\DayFive\DayFive.cpp" />
@@ -36,6 +37,7 @@
     <ClCompile Include="SourceCode\Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="SourceCode\Day14\DayFourteen.h" />
     <ClInclude Include="SourceCode\DayEight\DayEight.h" />
     <ClInclude Include="SourceCode\DayEleven\DayEleven.h" />
     <ClInclude Include="SourceCode\DayFive\DayFive.h" />
