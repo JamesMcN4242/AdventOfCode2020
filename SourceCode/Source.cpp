@@ -186,7 +186,7 @@ void RunDayFourteen()
 	const vector<string> input = InputGrabber::GetEachStringLine("Resources/Day14Input.txt");
 
 	unsigned long long outputCodeOne = DayFourteenTask::GetPartOneCode(input);
-	int outputCodeTwo = DayFourteenTask::GetPartTwoCode(input);
+	unsigned long long outputCodeTwo = DayFourteenTask::GetPartTwoCode(input);
 
 	cout << "Part One outcome: " << outputCodeOne << endl << endl;
 	cout << "Part Two outcome: " << outputCodeTwo << endl << endl;
