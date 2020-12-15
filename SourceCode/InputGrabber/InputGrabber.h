@@ -12,4 +12,5 @@ public:
 	static const string GetTextInput(string fileAddress);
 	static const vector<string> GetEachStringLine(string fileAddress);
 	static const vector<int> GetEachIntLine(string fileAddress);
+	static const vector<int> GetCommaSeperatedIntLine(string fileAddress);	
 };

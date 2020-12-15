@@ -75,3 +75,31 @@ const vector<int> InputGrabber::GetEachIntLine(string fileAddress)
 
 	return entries;
 }
+
+const vector<int> InputGrabber::GetCommaSeperatedIntLine(string fileAddress)
+{
+	string input = GetTextInput(fileAddress);
+	vector<int> entries;
+	string line = "";
+
+	for (int i = 0, len = input.length(); i < len; i++)
+	{
+		bool newLine = false;
+		if (input[i] != ',')
+		{
+			line += input[i];
+		}
+		else
+		{
+			newLine = true;
+		}
+
+		if ((newLine || i == len - 1) && line != "")
+		{
+			entries.push_back(stoi(line));
+			line.clear();
+		}
+	}
+
+	return entries;
+}
