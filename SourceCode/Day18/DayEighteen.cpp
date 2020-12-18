@@ -1,6 +1,7 @@
 #include "DayEighteen.h"
 
 using std::stoull;
+using std::to_string;
 
 const unsigned long long DayEighteenTask::GetPartOneCode(vector<string> input)
 {
@@ -15,7 +16,13 @@ const unsigned long long DayEighteenTask::GetPartOneCode(vector<string> input)
 
 const unsigned long long DayEighteenTask::GetPartTwoCode(vector<string> input)
 {
-	return 0;
+	unsigned long long result = 0;
+	for (int i = 0, len = input.size(); i < len; i++)
+	{
+		unsigned long long calculated = CalculateEquationPartTwo(input[i]);
+		result += calculated;
+	}
+	return result;
 }
 
 const unsigned long long DayEighteenTask::CalculateEquation(string equation)
@@ -66,6 +73,71 @@ const unsigned long long DayEighteenTask::CalculateEquation(string equation)
 	}
 
 	return result;
+}
+
+const unsigned long long DayEighteenTask::CalculateEquationPartTwo(string equation)
+{
+	OperationType operationToRun = OperationType::NONE;
+	string newEquation = "";
+	auto foundSpaceIndex = equation.find(' ');
+	unsigned long long result = 0;
+
+	while (equation.size() > 0)
+	{
+		switch (equation[0])
+		{
+		case '+':
+			operationToRun = OperationType::ADD;
+			break;
+
+		case '*':
+			newEquation += to_string(result) + " * ";
+			result = 0;
+			operationToRun = OperationType::NONE;
+			break;
+
+		case '(':
+		{
+			int closeBracketIndex = FindAppropriateCloseBracketIndex(equation);
+			string internalEquation = equation.substr(1, closeBracketIndex - 1);
+			unsigned long long internalVal = CalculateEquationPartTwo(internalEquation);
+			result = PerformOperation(result, internalVal, operationToRun);
+			operationToRun = OperationType::NONE;
+			foundSpaceIndex = closeBracketIndex + 1;
+			break;
+		}
+
+		default:
+			unsigned long long operationNum = stoull(equation.substr(0, foundSpaceIndex));
+			if (operationToRun != OperationType::MULTIPLY)
+			{
+				result = PerformOperation(result, operationNum, operationToRun);
+			}
+			else
+			{
+				newEquation += to_string(operationNum);
+				result = operationNum;
+			}
+			operationToRun = OperationType::NONE;
+			break;
+		}
+
+		if (foundSpaceIndex < equation.size())
+		{
+			equation = equation.substr(foundSpaceIndex + 1);
+			foundSpaceIndex = equation.find(' ');
+		}
+		else
+		{
+			break;
+		}
+	}
+
+	if (result > 0)
+	{
+		newEquation += to_string(result);
+	}
+	return CalculateEquation(newEquation);
 }
 
 const unsigned long long DayEighteenTask::PerformOperation(unsigned long long a, unsigned long long b, OperationType operationToRun)
