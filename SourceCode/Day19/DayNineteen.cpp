@@ -11,7 +11,17 @@ const unsigned long long DayNineteenTask::GetPartOneCode(vector<string> input)
 
 const unsigned long long DayNineteenTask::GetPartTwoCode(vector<string> input)
 {
-	return 0;
+	map<int, MessageInstruction> instructions = GetMessageInstructions(input[0]);
+	vector<string> messages = InputGrabber::GetEachLine(input[1], '\n');
+
+	//Since I'm doing a hacky way I don't actually need to change these, as I no longer check instruction 0, 8 or 11
+	instructions[8] = MessageInstruction("42 | 42 8");
+	instructions[11] = MessageInstruction("42 31 | 42 11 31");
+
+	vector<string> fourtyTwoEval = GetValidEntries(42, instructions);
+	vector<string> thirtyOneEval = GetValidEntries(31, instructions);
+
+	return CountAllValidEntriesAsWeGo(messages, fourtyTwoEval, thirtyOneEval);
 }
 
 const map<int, MessageInstruction> DayNineteenTask::GetMessageInstructions(string input)
@@ -124,4 +134,112 @@ const int DayNineteenTask::CountValidMsgs(vector<string>& validMessages, vector<
 	}
 
 	return count;
+}
+
+const int DayNineteenTask::CountAllValidEntriesAsWeGo(vector<string>& messages, vector<string>& fourtyTwoEval, vector<string>& thirtyOneEval)
+{
+	int count = 0;
+
+	//Remove any that don't start with a solution that is available from 42 and 42, and ends with a solution from 31
+	for (int i = 0, len = messages.size(); i < len; i++)
+	{
+		string msg = messages[i];
+		bool startValid = IsSectionPresent(msg, fourtyTwoEval, true);
+		bool endValid = false;
+		if (startValid)
+		{
+			startValid = IsSectionPresent(msg, fourtyTwoEval, true);
+			if (startValid)
+			{
+				endValid = IsSectionPresent(msg, thirtyOneEval, false);
+			}
+		}
+
+		if (!startValid || !endValid)
+		{
+			messages.erase(messages.begin() + i);
+			i--;
+			len--;
+			continue;
+		}
+
+		messages[i] = msg;
+	}
+
+	while (messages.size() > 0)
+	{
+		for (int i = 0, len = messages.size(); i < len; i++)
+		{
+			string msg = messages[i];
+			if (msg == "")
+			{
+				count++;
+				messages.erase(messages.begin() + i);
+				i--;
+				len--;
+				continue;
+			}
+
+			bool startRemoved = IsSectionPresent(msg, fourtyTwoEval, true);
+			if (startRemoved && msg.size() > 0)
+			{
+				IsSectionPresent(msg, thirtyOneEval, false);
+			}
+
+			if (!startRemoved)
+			{
+				messages.erase(messages.begin() + i);
+				i--;
+				len--;
+				continue;
+			}
+
+			messages[i] = msg;
+		}
+	}
+
+	return count;
+}
+
+const bool DayNineteenTask::IsSectionPresent(string& msg, vector<string>& validSegments, bool atStart)
+{
+	int msgSize = msg.size();
+	for (int j = 0, jLen = validSegments.size(); j < jLen; j++)
+	{
+		if (atStart)
+		{
+			string start = validSegments[j];
+			if (start == msg.substr(0, start.size()))
+			{
+				if (msg.size() > start.size())
+				{
+					msg = msg.substr(start.size());
+				}
+				else
+				{
+					msg = "";
+				}
+
+				return true;
+			}
+		}
+		else
+		{
+			string end = validSegments[j];
+			if (end == msg.substr(msgSize - end.size()))
+			{
+				if (msgSize > end.size())
+				{
+					msg = msg.substr(0, msgSize - end.size());
+				}
+				else
+				{
+					msg = "";
+				}
+				return true;
+			}
+		}
+	}
+
+	return false;
 }

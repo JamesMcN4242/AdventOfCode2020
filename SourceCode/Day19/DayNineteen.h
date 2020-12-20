@@ -78,4 +78,6 @@ private:
 	static const vector<string> GetValidEntries(int instructionNumber, map<int, MessageInstruction>& messageInstructions);
 	static const vector<string> GetAllValidCombos(vector<vector<string>>& toCombine);
 	static const int CountValidMsgs(vector<string>& validMessages, vector<string>& messagesToCheck);
+	static const int CountAllValidEntriesAsWeGo(vector<string>& messages, vector<string>& fourtyTwoEval, vector<string>& thirtyOneEval);
+	static const bool IsSectionPresent(string& msg, vector<string>& validSegments, bool atStart);
 };
