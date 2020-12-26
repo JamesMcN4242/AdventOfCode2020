@@ -20,6 +20,7 @@
 #include "Day19/DayNineteen.h"
 #include "Day20/DayTwenty.h"
 #include "Day21/DayTwentyOne.h"
+#include "Day22/DayTwentyTwo.h"
 #include <iostream>
 
 using std::cout;
@@ -46,10 +47,11 @@ void RunDayEighteen();
 void RunDayNineteen();
 void RunDayTwenty();
 void RunDayTwentyOne();
+void RunDayTwentyTwo();
 
 void main()
 {
-	RunDayTwentyOne();
+	RunDayTwentyTwo();
 }
 
 void RunDayOne()
@@ -278,6 +280,17 @@ void RunDayTwentyOne()
 
 	const unsigned long long outputCodeOne = DayTwentyOneTask::GetPartOneCode(input);
 	const string outputCodeTwo = DayTwentyOneTask::GetPartTwoCode(input);
+
+	cout << "Part One outcome: " << outputCodeOne << endl << endl;
+	cout << "Part Two outcome: " << outputCodeTwo << endl << endl;
+}
+
+void RunDayTwentyTwo()
+{
+	const vector<string> input = InputGrabber::GetStringsSeperatedByBlankLine("Resources/Day22Input.txt");
+
+	const unsigned long long outputCodeOne = DayTwentyTwoTask::GetPartOneCode(input);
+	const unsigned long long outputCodeTwo = DayTwentyTwoTask::GetPartTwoCode(input);
 
 	cout << "Part One outcome: " << outputCodeOne << endl << endl;
 	cout << "Part Two outcome: " << outputCodeTwo << endl << endl;
