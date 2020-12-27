@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <queue>
+#include <deque>
 #include <vector>
 
+using std::deque;
 using std::string;
-using std::queue;
 using std::vector;
 
 class DayTwentyTwoTask
@@ -14,6 +14,8 @@ public:
 	static const unsigned long long GetPartOneCode(vector<string> input);
 	static const unsigned long long GetPartTwoCode(vector<string> input);
 private:
-	static const queue<int> GetPlayerCards(string playerInput);
-	static const void PlayToCompletion(queue<int>& p1Cards, queue<int>& p2Cards);
+	static const deque<int> GetPlayerCards(string playerInput);
+	static const void PlayToCompletion(deque<int>& p1Cards, deque<int>& p2Cards);
+	static const void PlayRecursiveGames(deque<int>& p1Cards, deque<int>& p2Cards);
+	static const unsigned long long GetWinnerScore(deque<int>& winningHand);
 };
