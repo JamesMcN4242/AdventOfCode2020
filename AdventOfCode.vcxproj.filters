@@ -157,29 +157,41 @@
     <Filter Include="Source Files\Days\Days11-20\Day20">
       <UniqueIdentifier>{3310a3ff-c06a-49d9-ba07-73d68af5eaf0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Days\Day22">
-      <UniqueIdentifier>{1d9c3f97-8ad5-4958-8d5b-c6f413eb500b}</UniqueIdentifier>
+    <Filter Include="Header Files\Days\Days21-25">
+      <UniqueIdentifier>{8af3ab24-0667-4ccb-a4d4-a6f35a1f5d7f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Days\Day21">
+    <Filter Include="Header Files\Days\Days21-25\Day21">
       <UniqueIdentifier>{726fbf1c-6c06-4722-9670-8e56e0a6e6a4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Days\Day21">
-      <UniqueIdentifier>{f3c51e08-f9cb-4c50-86e7-e4e8ae8e3744}</UniqueIdentifier>
+    <Filter Include="Header Files\Days\Days21-25\Day22">
+      <UniqueIdentifier>{1d9c3f97-8ad5-4958-8d5b-c6f413eb500b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Days\Day22">
-      <UniqueIdentifier>{f4d6b7f0-d8a0-4b6d-aa29-a47f960d84ee}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Days\Day23">
+    <Filter Include="Header Files\Days\Days21-25\Day23">
       <UniqueIdentifier>{c1298c05-ed0a-4d7c-bef3-95fa07e2e1bc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Days\Day23">
+    <Filter Include="Source Files\Days\Days21-25">
+      <UniqueIdentifier>{f21dcf9a-ad0e-431e-a384-6653ba9d8037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\Days21-25\Day21">
+      <UniqueIdentifier>{f3c51e08-f9cb-4c50-86e7-e4e8ae8e3744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\Days21-25\Day22">
+      <UniqueIdentifier>{f4d6b7f0-d8a0-4b6d-aa29-a47f960d84ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Days\Days21-25\Day23">
       <UniqueIdentifier>{beae678f-d363-4698-8204-458d0d49d998}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Days\Days24">
+    <Filter Include="Source Files\Days\Days21-25\Day24">
+      <UniqueIdentifier>{3c54e38f-92ef-4fe1-bcbf-0fc209b50c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\Days21-25\Day25">
+      <UniqueIdentifier>{213c43d0-82b5-4efc-89af-86c0b0d0b1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Days\Days21-25\Day24">
       <UniqueIdentifier>{76a96cac-29b3-427e-a1ac-0e231aa28b46}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Days\Day24">
-      <UniqueIdentifier>{3c54e38f-92ef-4fe1-bcbf-0fc209b50c2f}</UniqueIdentifier>
+    <Filter Include="Source Files\Days\Days21-25\Day25">
+      <UniqueIdentifier>{fdf347a7-dfc4-4550-85c2-4f5afc924118}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -250,16 +262,19 @@
       <Filter>Source Files\Days\Days11-20\Day20</Filter>
     </ClCompile>
     <ClCompile Include="SourceCode\Day21\DayTwentyOne.cpp">
-      <Filter>Source Files\Days\Day21</Filter>
+      <Filter>Source Files\Days\Days21-25\Day21</Filter>
     </ClCompile>
     <ClCompile Include="SourceCode\Day22\DayTwentyTwo.cpp">
-      <Filter>Source Files\Days\Day22</Filter>
+      <Filter>Source Files\Days\Days21-25\Day22</Filter>
     </ClCompile>
     <ClCompile Include="SourceCode\Day23\DayTwentyThree.cpp">
-      <Filter>Source Files\Days\Day23</Filter>
+      <Filter>Source Files\Days\Days21-25\Day23</Filter>
     </ClCompile>
     <ClCompile Include="SourceCode\Day24\DayTwentyFour.cpp">
-      <Filter>Source Files\Days\Day24</Filter>
+      <Filter>Source Files\Days\Days21-25\Day24</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Day25\DayTwentyFive.cpp">
+      <Filter>Source Files\Days\Days21-25\Day25</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -332,16 +347,19 @@
       <Filter>Header Files\Days\Days11-20\Day20</Filter>
     </ClInclude>
     <ClInclude Include="SourceCode\Day21\DayTwentyOne.h">
-      <Filter>Header Files\Days\Day21</Filter>
+      <Filter>Header Files\Days\Days21-25\Day21</Filter>
     </ClInclude>
     <ClInclude Include="SourceCode\Day22\DayTwentyTwo.h">
-      <Filter>Header Files\Days\Day22</Filter>
+      <Filter>Header Files\Days\Days21-25\Day22</Filter>
     </ClInclude>
     <ClInclude Include="SourceCode\Day23\DayTwentyThree.h">
-      <Filter>Header Files\Days\Day23</Filter>
+      <Filter>Header Files\Days\Days21-25\Day23</Filter>
     </ClInclude>
     <ClInclude Include="SourceCode\Day24\DayTwentyFour.h">
-      <Filter>Header Files\Days\Days24</Filter>
+      <Filter>Header Files\Days\Days21-25\Day24</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Day25\DayTwentyFive.h">
+      <Filter>Header Files\Days\Days21-25\Day25</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
