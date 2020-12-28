@@ -26,9 +26,12 @@
 #include "Day25/DayTwentyFive.h"
 #include <iostream>
 
+using std::cin;
 using std::cout;
 using std::endl;
 
+void RunAllDays();
+void RunAppropriateDay(int dayToRun);
 void RunDayOne();
 void RunDayTwo();
 void RunDayThree();
@@ -57,7 +60,85 @@ void RunDayTwentyFive();
 
 void main()
 {
-	RunDayTwentyFive();
+	cout << "Here you can run all of the puzzles for Advent of Code 2020! (Times vary significantly)" << endl << endl;
+	
+	while (true)
+	{
+		cout << "Please insert a number for the day to run, 'a' for all, or 'x' to exit the programme." << endl;
+		string input;
+		cin >> input;
+		cout << endl;
+
+		switch (input[0])
+		{
+		case 'a':
+		case 'A':
+			RunAllDays();
+			break;
+
+		case 'x':
+		case 'X':
+			return;
+
+		default:
+			try
+			{
+				int dayToRun = stoi(input);
+				RunAppropriateDay(dayToRun);
+			}
+			catch (const std::exception&)
+			{
+				cout << "Sorry. That doesn't seem to be an expected value!" << endl<< endl;
+			}
+			break;
+		}
+	}
+}
+
+void RunAllDays()
+{
+	for (int i = 1; i <= 25; i++)
+	{
+		RunAppropriateDay(i);
+	}
+}
+
+void RunAppropriateDay(int dayToRun)
+{
+	cout << "Day " << dayToRun << ": " << endl;
+
+	switch (dayToRun)
+	{
+	case 1:	RunDayOne();				 break;
+	case 2:	RunDayTwo();				 break;
+	case 3:	RunDayThree();				 break;
+	case 4:	RunDayFour();				 break;
+	case 5:	RunDayFive();				 break;
+	case 6:	RunDaySix();				 break;
+	case 7:	RunDaySeven();				 break;
+	case 8:	RunDayEight();				 break;
+	case 9:	RunDayNine();				 break;
+	case 10: RunDayTen();				 break;
+	case 11: RunDayEleven();			 break;
+	case 12: RunDayTwelve();			 break;
+	case 13: RunDayThirteen();			 break;
+	case 14: RunDayFourteen();			 break;
+	case 15: RunDayFifteen();			 break;
+	case 16: RunDaySixteen();			 break;
+	case 17: RunDaySeventeen();			 break;
+	case 18: RunDayEighteen();			 break;
+	case 19: RunDayNineteen();			 break;
+	case 20: RunDayTwenty();			 break;
+	case 21: RunDayTwentyOne();			 break;
+	case 22: RunDayTwentyTwo();			 break;
+	case 23: RunDayTwentyThree();		 break;
+	case 24: RunDayTwentyFour();		 break;
+	case 25: RunDayTwentyFive();		 break;
+
+	default:
+		cout << "Sorry. That doesn't seem to be an expected day!" << endl << endl;
+		break;
+	}
 }
 
 void RunDayOne()
@@ -128,6 +209,7 @@ void RunDaySix()
 
 void RunDaySeven()
 {
+	cout << "Wait times may be significant on this puzzle unless optimised" << endl << endl;
 	string input = InputGrabber::GetTextInput("Resources/DaySevenInput.txt");
 
 	int outputCodeOne = DaySevenTask::GetPartOneCode(input);
@@ -216,6 +298,7 @@ void RunDayFourteen()
 
 void RunDayFifteen()
 {
+	cout << "Wait times may be significant on this puzzle unless optimised" << endl << endl;
 	const vector<int> input = InputGrabber::GetCommaSeperatedIntLine("Resources/Day15Input.txt");
 
 	const int outputCodeOne = DayFifteenTask::GetPartOneCode(input);
@@ -260,6 +343,7 @@ void RunDayEighteen()
 
 void RunDayNineteen()
 {
+	cout << "Wait times may be significant on this puzzle unless optimised" << endl << endl;
 	const vector<string> input = InputGrabber::GetStringsSeperatedByBlankLine("Resources/Day19Input.txt");
 
 	const unsigned long long outputCodeOne = DayNineteenTask::GetPartOneCode(input);
@@ -293,6 +377,7 @@ void RunDayTwentyOne()
 
 void RunDayTwentyTwo()
 {
+	cout << "Wait times may be significant on this puzzle unless optimised" << endl << endl;
 	const vector<string> input = InputGrabber::GetStringsSeperatedByBlankLine("Resources/Day22Input.txt");
 
 	const unsigned long long outputCodeOne = DayTwentyTwoTask::GetPartOneCode(input);
@@ -304,6 +389,7 @@ void RunDayTwentyTwo()
 
 void RunDayTwentyThree()
 {
+	cout << "Wait times may be significant on this puzzle unless optimised" << endl << endl;
 	string input = InputGrabber::GetTextInput("Resources/Day23Input.txt");
 
 	const string outputCodeOne = DayTwentyThreeTask::GetPartOneCode(input);
